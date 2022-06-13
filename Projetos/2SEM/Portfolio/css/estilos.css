@@ -1,0 +1,199 @@
+body{
+    font-family: 'Roboto', sans-serif;    
+}
+header{
+    background-color: #a20000;
+    padding: 30px 0px;
+    text-align: right;
+}
+
+nav a{
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 48px;
+}
+
+li{
+    display: inline;
+    
+}
+
+#banner{
+    background-color: #070512;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 96px 0px;
+}
+
+#banner h1{
+    font-size: 48px;   
+    font-weight: bolder; 
+    margin-bottom: 24px;
+}
+
+#banner span{
+    color: #a20000;
+}
+
+#banner p{
+    margin-bottom: 16px;
+    line-height: 24px;
+  
+}
+
+button{
+    background-color: #a20000;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bolder;;
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    padding: 18px 16px;
+}
+
+#sobreMim{
+    background-color: #fafafa;
+    padding: 64px 32px;
+}
+
+#foto img{
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 10px 5px #999;
+}
+
+#sobreMim h2{
+    color: #a20000;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#sobreMim p, #conhecimentos p, #portfolio p{
+    margin: 36px 0px 64px 0px;
+    color: #666;
+    text-align: justify;
+    line-height: 24px;
+}
+
+#foto{
+    float: left;
+    margin-right: 48px;
+}
+
+.tituloVerde{
+    font-size: 36px;
+    color: #a20000;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#conhecimentos, #portfolio{
+    padding: 64px 32px;
+    background-color: #fff;
+}
+
+.barraProgresso{
+    border: 2px solid #a20000;
+    background-color: #ddd;
+    height: 24px;
+    margin-bottom: 24px;
+    margin-top: 8px;
+}
+
+.progresso100{
+    background-color: #a20000;
+    height: 24px;
+}
+
+.progresso90{
+    background-color: #a20000;
+    height: 24px;
+    width: 90%;
+}
+
+#conhecimentos h3{
+    color: #666;
+    font-weight: bolder;
+}
+
+#experiencia, #contato{
+    background-color: #a20000;
+    padding: 64px 32px;
+    height: auto;
+    overflow: hidden;
+}
+
+.tituloBranco{
+    font-size: 36px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bolder; 
+    margin-bottom: 24px;
+}
+
+.textoBranco{
+    color: #FFF;
+    line-height: 24px;
+    text-align: justify;
+}
+
+#experiencia img, #portfolio img{
+   margin: 24px 4px 0px 4px;  
+}
+
+#experiencia img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+#experiencia div, #portfolio div{
+    text-align: center;
+}
+
+#contato div{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 24px;
+    border: 5px solid #a20000;
+    
+}
+
+
+#formulario{
+    background-color: #fff;
+    padding: 24px;
+    text-align: right;
+}
+
+input, textarea{
+    margin-top: 16px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px #ccc solid;
+    padding: 20px 0px;
+    color: #555;
+}
+
+#btn-enviar{
+    background-color: #fff;
+    color: #a20000;
+    width: auto;
+    padding: 15px;
+    border: 1px solid #a20000;
+}
+
+#btn-enviar:hover{
+    background-color: #a20000;
+    color: #fff;
+}
+
+footer{
+    padding: 32px;
+    color: #555;
+    text-align: center;
+}

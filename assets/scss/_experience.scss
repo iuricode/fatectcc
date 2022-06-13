@@ -1,0 +1,68 @@
+#s-experience {
+  @include spacing-section;
+  .grid-layout {
+    h2 {
+      @include title-section();
+    }
+    #experience {
+      margin-top: $gap-4;
+      display: flex;
+      @include responsive-desktop {
+        flex-wrap: wrap;
+      }
+
+      gap: 40px;
+      .option-experience {
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+        @include responsive-desktop {
+          width: 100%;
+        }
+        > div {
+          padding: $gap-3 $gap-4;
+          text-align: left;
+          background-color: $color-gray-200;
+          &:hover {
+            cursor: pointer;
+            border-left: 4px solid $color-main-fatec;
+          }
+          h3 {
+            font-size: 1.8rem;
+            font-weight: 500;
+          }
+        }
+      }
+      .text-experience {
+        width: 75%;
+        @include responsive-desktop {
+          width: 100%;
+        }
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @include responsive-desktop {
+            flex-wrap: wrap;
+            gap: $gap-4;
+          }
+          h4 {
+            font-size: 2.4rem;
+          }
+          p {
+            font-size: 1.8rem;
+          }
+        }
+        h5 {
+          font-size: 1.8rem;
+          margin: $gap-4 $gap-0;
+          color: $color-main-fatec;
+        }
+        p {
+          font-size: 1.8rem;
+          line-height: 160%;
+        }
+      }
+    }
+  }
+}

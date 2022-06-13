@@ -1,0 +1,40 @@
+#s-services {
+  @include spacing-section;
+  background-color: $color-white;
+  .grid-layout {
+    h2 {
+      text-align: center;
+      @include title-section();
+    }
+    #services {
+      display: flex;
+      height: auto;
+      flex-wrap: wrap;
+      margin: $gap-3 0px;
+      article {
+        background-color: $color-gray-200;
+        border-radius: 4px;
+        @include block-article;
+        div {
+          height: 90px;
+          img {
+            width: 70px;
+          }
+        }
+        h3 {
+          padding: $gap-3 0px;
+          font: {
+            size: 2.4rem;
+            weight: 500;
+          }
+        }
+        p {
+          line-height: 3.2rem;
+          font: {
+            size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}

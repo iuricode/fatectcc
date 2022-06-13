@@ -1,0 +1,59 @@
+#s-projects {
+  @include spacing-section;
+  text-align: center;
+  background-color: $color-gray-200;
+  .grid-layout {
+    h2 {
+      @include title-section();
+    }
+    #projects {
+      margin: $gap-3 0px;
+      @include flexbox-between;
+      text-align: left;
+      > article {
+        background-color: $color-white;
+        border-radius: 4px;
+        @include block-article;
+        min-height: 340px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h3 {
+          font: {
+            size: 2.4rem;
+            weight: 500;
+          }
+        }
+        p {
+          line-height: $gap-3;
+          margin: $gap-3 $gap-0;
+          color: $color-gray-dark-fatec;
+          line-height: 3.2rem;
+          font: {
+            size: 1.8rem;
+          }
+        }
+        button {
+          background-color: $color-main-fatec;
+          color: #fff;
+          width: 100%;
+          border: none;
+          border-radius: 4px;
+          font-size: 18px;
+          padding: 1.2rem;
+          cursor: pointer;
+        }
+      }
+    }
+    a {
+      color: $color-main-fatec;
+      position: relative;
+      @include hover-link();
+      font: {
+        size: 1.8rem;
+        weight: 500;
+      }
+    }
+  }
+}

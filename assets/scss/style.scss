@@ -1,0 +1,11 @@
+@import "./variables", "./reset", "./menu", "./home", "./about", "./experience",
+  "./projects", "./modal", "./services", "./skills", "./footer";
+
+.activeExperience {
+  background-color: $color-gray-200;
+  border-left: 4px solid $color-main-fatec;
+}
+
+.grid-layout {
+  @include grid-layout();
+}

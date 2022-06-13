@@ -1,0 +1,119 @@
+#s-about {
+  @include spacing-section;
+  background-color: $bg-secondary;
+  .grid-layout {
+    #about {
+      @include flexbox-between;
+    }
+    #about-photo {
+      width: 50%;
+      padding-right: 100px;
+      @include flexbox-center;
+      position: relative;
+      transition: 1s all ease;
+      #photo-iuricode {
+        width: 400px;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+      div {
+        @include flexbox-center;
+        img {
+          width: $gap-5;
+        }
+      }
+      .about-figure {
+        position: absolute;
+        background-color: $color-white;
+        border-radius: 4px;
+        width: $gap-7;
+        height: $gap-7;
+      }
+      .figure-one {
+        top: 40px;
+        right: 430px;
+      }
+      .figure-two {
+        top: 100px;
+        right: 150px;
+      }
+      .figure-three {
+        top: 250px;
+        right: 450px;
+      }
+      .icon-one {
+        animation: icon-move 3s ease 2.9s infinite alternate;
+      }
+      .icon-two {
+        animation: icon-move 3s ease 1.9s infinite alternate;
+      }
+      .icon-three {
+        animation: icon-move 3s ease 0.6s infinite alternate;
+      }
+      @keyframes icon-move {
+        0% {
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          transform: translate3d(10px, -40px, 0);
+        }
+      }
+      img {
+        width: 100%;
+        max-width: 400px;
+      }
+      @include responsive-desktop {
+        display: none;
+      }
+    }
+    #about-text {
+      width: 50%;
+      @include responsive-desktop {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+      }
+      h2 {
+        @include title-section();
+        color: $color-white;
+      }
+      p {
+        line-height: 3.2rem;
+        color: $color-white;
+        font: {
+          size: 1.8rem;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: $gap-4;
+        .cta-about {
+          background-color: #526e7c;
+          padding: $gap-2;
+          border-radius: 100%;
+          &:hover {
+            background-color: #344650;
+          }
+        }
+        .button-about {
+          background-color: #526e7c;
+          padding: $gap-2;
+          display: flex;
+          align-items: center;
+          gap: $gap-2;
+          font-size: 1.8rem;
+          border-radius: $gap-1;
+          color: $color-white;
+          &:hover {
+            background-color: #344650;
+          }
+        }
+      }
+    }
+  }
+}

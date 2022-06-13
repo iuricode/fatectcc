@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <title>Validando Formulários com JavaScript</title>
+    <style type="text/css">
+      .msg-erro {
+        color: red;
+      }
+    </style>
+    <script src="js/validacao.js"></script>
+  </head>
+  <body class="container" style="background-color: azure">
+    <h1 class="text-center">Validando Formulários com JavaScript</h1>
+    <form class="form" name="formSignUp" action="mailto:moraes.jlcm@gmail.com">
+      <div class="form-group">
+        <span id="msg_erro" name="msg_erro" class="msg-erro"></span>
+      </div>
+      <div class="form-group">
+        <label for="data">Nome</label>
+        <input type="text" name="nome" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="data">E-mail</label>
+        <input type="text" id="email" name="email" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="data">Senha</label>
+        <input type="password" name="senha" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="data">Confirmar Senha</label>
+        <input type="password" name="confirm_senha" class="form-control" />
+      </div>
+
+      <button class="btn btn-primary" type="button" onclick="validar()">
+        Validar
+      </button>
+    </form>
+  </body>
+</html>
